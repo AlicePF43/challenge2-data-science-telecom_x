@@ -5,6 +5,19 @@
 ## Visão Geral
 Este projeto realiza uma análise completa dos fatores associados à evasão de clientes (churn) em uma empresa de telecomunicações, seguindo um fluxo de trabalho que vai desde a extração e transformação dos dados até a análise visual e recomendações estratégicas.
 
+## Bibliotecas e Ferramentas Utilizadas
+- **pandas**: Para manipulação e análise de dados estruturados
+- **numpy**: Para operações numéricas e manipulação de arrays
+- **matplotlib**: Para criação de gráficos e visualizações estáticas
+- **seaborn**: Para visualizações estatísticas avançadas e gráficos mais estilizados
+- **warnings**: Para controle de avisos de depreciação durante a geração de gráficos
+
+### Tipos de Gráficos Utilizados
+- **Histogramas com curvas de densidade (histplot)**: Para análise de distribuição de variáveis numéricas como Tempo de Contrato, Custo Mensal e Custo Total
+- **Gráficos de barras (barplot)**: Para visualização de contagem e proporção em variáveis categóricas
+- **Boxplots**: Para comparação da distribuição de custos entre diferentes serviços (Fibra vs. DSL)
+- **Gráficos de proporção**: Para análise de taxas de evasão por categoria
+
 ## Estrutura do Projeto
 - `dados_processados.csv` - Dataset processado após ETL
 - `analyze_data.py` - Script para análise inicial dos dados
@@ -85,11 +98,8 @@ Este projeto realiza uma análise completa dos fatores associados à evasão de 
 5. Desenvolver programas específicos para clientes idosos
 6. Criar ofertas personalizadas para clientes sem parceiro/dependentes
 
-## Próximos Passos
-- Implementar modelos preditivos para identificar clientes com alto risco de evasão
-- Realizar análise de segmentação para estratégias mais personalizadas
-
 
 ---
 
 Este projeto demonstra como a análise exploratória de dados pode revelar insights valiosos para redução de churn, sem necessidade de modelos preditivos complexos.
+
