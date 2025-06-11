@@ -17,6 +17,7 @@ Este projeto realiza uma análise completa dos fatores associados à evasão de 
 - **Gráficos de barras (barplot)**: Para visualização de contagem e proporção em variáveis categóricas
 - **Boxplots**: Para comparação da distribuição de custos entre diferentes serviços (Fibra vs. DSL)
 - **Gráficos de proporção**: Para análise de taxas de evasão por categoria
+- **Mapas de calor (heatmap)**: Para visualização da matriz de correlação entre variáveis numéricas e identificação de relações lineares
 
 ## Estrutura do Projeto
 - `dados_processados.csv` - Dataset processado após ETL
@@ -46,6 +47,14 @@ Este projeto realiza uma análise completa dos fatores associados à evasão de 
   - Custo Mensal
   - Custo Total
 - Comparação visual entre clientes com e sem evasão
+
+#### Análise de Correlação
+- Geração de matriz de correlação usando mapa de calor (heatmap)
+- Identificação de correlações importantes:
+  - Correlação negativa forte entre Tempo_de_Contrato e Evasao (-0.34)
+  - Correlação positiva entre Custo_Mensal e Evasao (0.19)
+  - Correlação positiva entre Faturamento_Sem_Papel e Evasao (0.19)
+  - Correlação negativa entre Custo_Total e Evasao (-0.19)
 
 #### Análise de Variáveis Categóricas
 - Geração de gráficos de contagem e proporção para:
@@ -98,6 +107,10 @@ Este projeto realiza uma análise completa dos fatores associados à evasão de 
 5. Desenvolver programas específicos para clientes idosos
 6. Criar ofertas personalizadas para clientes sem parceiro/dependentes
 
+## Próximos Passos
+- Implementar modelos preditivos para identificar clientes com alto risco de evasão
+- Realizar análise de segmentação para estratégias mais personalizadas
+- Desenvolver dashboard interativo para monitoramento contínuo
 
 ---
 
